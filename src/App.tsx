@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import * as c from './App.styles';
-import { Item } from './types/item'
+import { Item } from './types/item';
+import { ListItem } from './components/ListItem';
 
 const App = () => {
   const [list, setList] = useState<Item[]>([
@@ -15,7 +16,7 @@ const App = () => {
 
 
         {list.map((item, index) =>(
-          <div>{item.name}</div>
+          <ListItem></ListItem>
         ))}
 
       </c.Area>
