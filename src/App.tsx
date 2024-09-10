@@ -16,7 +16,7 @@ const App = () => {
 
 
         {list.map((item, index) =>(
-          <ListItem></ListItem>
+          <ListItem key={index} item={item} />
         ))}
 
       </c.Area>
